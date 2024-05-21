@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clue 4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .input-box {
+            font-size: 24px;
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+            animation: jitter 0.3s infinite;
+        }
+        @keyframes jitter {
+            0%, 100% { border-bottom-color: black; }
+            25% { border-bottom-color: #333; }
+            50% { border-bottom-color: #666; }
+            75% { border-bottom-color: #999; }
+        }
+        .confirm-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+        }
+        .confirm-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="input-box" id="inputBox">
+        <br>
+        <button class="confirm-btn" onclick="confirmInput()">Confirm</button>
+    </div>
+    <script>
+        function confirmInput() {
+            const inputBox = document.getElementById('inputBox');
+            if (inputBox.value === '5') {
+                window.open('https://ivanproduce.github.io/bjdaojhjka/', '_blank');
+            } else {
+                alert('Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
